@@ -1,4 +1,4 @@
-# -*-coding:gbk
+# -*-coding:utf-8
 import asyncio,threading
 
 @asyncio.coroutine
