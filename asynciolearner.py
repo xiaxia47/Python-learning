@@ -22,7 +22,7 @@ def wget(host):
             break
         print('%s header > %s' % (host,line.decode('utf-8').rstrip()))
     writer.close()
-    
+ 
 loop = asyncio.get_event_loop()
 task1 = [wget(host) for host in ['www.sina.com.cn','www.sohu.com','www.163.com']]
 tasks = [hello(),hello(),task1]
