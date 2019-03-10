@@ -17,7 +17,7 @@ fromdata = {"Param":"案件类型:刑事案件","Index":"1","Page":"5",
 
 def getvjkl5(session):
     init_data = {'sorttype':'1',"conditions":None}
-    session.get(SEARCH_PAGE,params=init_data)
+    session.get(SEARCH_PAGE, params=init_data)
     return session.cookies['vjkl5']
 
 
